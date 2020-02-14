@@ -127,7 +127,7 @@ public class TestChronology extends TestCase {
         DateTime dt2 = new DateTime(0L, chrono2);
         DateTime dt3 = new DateTime(0L, chrono3);
         
-        assertEquals(true, dt1.equals(dt2));
+        assertEquals(false, dt1.equals(dt2));
         assertEquals(false, dt1.equals(dt3));
         
         assertEquals(true, chrono1.hashCode() == chrono2.hashCode());
